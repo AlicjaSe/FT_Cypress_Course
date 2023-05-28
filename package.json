@@ -13,6 +13,7 @@
   "author": "Ala S",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^12.10.0"
+    "cypress": "^12.10.0",
+    "@faker-js/faker": "7.6.0"
   }
 }
