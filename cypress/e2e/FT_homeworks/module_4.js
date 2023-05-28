@@ -23,7 +23,7 @@ describe('homework for module 4', () => {
         cy.get('h2').contains('Kanał z wpisami')
         cy.get('h2').contains('Szkoła dla przyszłych testerów automatyzujących')
         cy.get('span').contains('Do tych kursów można przystąpić raz na jakiś czas')
-        cy.get('h2').contains('Do tych kursów można przystąpić w dowolnym momencie. ')
+        cy.get('h2').contains('testy automatyczne w 10 tygodni')
         cy.get('span').contains('CHCESZ BYĆ NA BIEŻĄCO?')
     })
 
