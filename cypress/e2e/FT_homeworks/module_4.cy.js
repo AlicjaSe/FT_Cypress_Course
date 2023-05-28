@@ -4,33 +4,34 @@ describe('homework for module 4', () => {
     })
     
     it('search 5 elements by id', function(){
-        cy.get('#contact-details')
+        cy.get('#global-styles-inline-css')
         cy.get('#kursy')
         cy.get('#newsletter')
-        cy.get('#elementor-action')
+        cy.get('#wp-block-library-css')
         cy.get('#content')
     })
 
     it('search 5 elements by class', function(){
-        cy.get('.nv-meta-list')
-        cy.get('.no-mobile')
-        cy.get('.nv-is-boxed')
-        cy.get('.alignfull')
+        cy.get('.yoast-schema-graph')
+        cy.get('.container')
+        cy.get('.wrapper')
+        cy.get('.header')
         cy.get('.footer-bottom')
     })
 
     it('search 5 elements by text', function(){
-        cy.get('h2').contains('Kanał z wpisami')
-        cy.get('h2').contains('Szkoła dla przyszłych testerów automatyzujących')
-        cy.get('span').contains('Do tych kursów można przystąpić raz na jakiś czas')
-        cy.get('h2').contains('testy automatyczne w 10 tygodni')
-        cy.get('span').contains('CHCESZ BYĆ NA BIEŻĄCO?')
+      cy.get('a').contains('Newsletter')
+      cy.get('title').contains('Strona Główna - Fabryka Testów')
+      cy.get('span').contains('Menu nawigacji')
+      cy.get('h2').contains('To tylko część z firm, których pracownicy szkolili się z naszych kursów')
+      cy.get('span').contains('Sprawdź nasze kursy')
+     
     })
 
     it('search 5 elements by attribute', function (){
         cy.get('span[class="bars"]')
         cy.get('img[class="neve-site-logo skip-lazy"]')
-        cy.get('div[id="wrapper"]')
+        cy.get('div[class="wrapper"]')
         cy.get('a[class="brand"]')
         cy.get('main[id="content"]')
     })
